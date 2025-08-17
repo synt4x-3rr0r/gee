@@ -1,7 +1,11 @@
 import streamlit as st
-import ee
 import folium
 from streamlit_folium import folium_static
+import ee
+
+service_account = "santy167rr@mi-proyecto-gee-468622.iam.gserviceaccount.com"
+credentials = ee.ServiceAccountCredentials(service_account,'earth-engine-api-key.json')
+ee.Initialize(credentials, project = "mi-proyecto-gee-468622")
 
 # Configuración especial para Streamlit Cloud
 try:
