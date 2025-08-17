@@ -1,4 +1,3 @@
-streamlit
-ee
-folium
-streamlit_folium
+earthengine-api>=0.1.328
+folium>=0.14.0
+streamlit-folium>=0.10.0
